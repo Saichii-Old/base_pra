@@ -17,5 +17,6 @@ if($bmi>=18.5 && $bmi<24){
 }
 
 ?>
+<a href="bmi.php?bmi=<?=$bmi;?>">回首頁</a>
 </body>
 </html>
