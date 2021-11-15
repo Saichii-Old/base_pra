@@ -38,8 +38,8 @@
     <label for="" name="acc">account</label>    
     <input type="text" name="acc" id="acc">
 
-    <label for="" name="ps">password</label>      
-    <input type="password" name="ps" id="ps">
+    <label for="" name="pw">password</label>      
+    <input type="password" name="pw" id="pw">
 
     </div>
 </body>
