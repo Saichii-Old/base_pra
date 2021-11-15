@@ -10,16 +10,13 @@
 <body>
     <!-- <header>11/15 檔案拆分</header> -->
     <?php include "header.html"; ?>
-    <nav>
-        <a href="file01.php">file01.php</a>
-        <a href="file02.php">file02.php</a>
-        <a href="file03.php">file03.php</a>
-    </nav>
+    <?php include "nav.php"; ?>
+
     <div class="body">
+
         file03 content
     </div>
-    <footer>
-    110 php class
-    </footer>
+
+    <?php include "footer.php" ?>
 </body>
 </html>
