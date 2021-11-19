@@ -1,0 +1,19 @@
+.display-box{
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    border-radius: 4px;
+}
+
+.display-block{
+    display: block;
+    /* 設定為區塊元素 */
+}
+
+.display-inline{
+    display: inline;
+}
+
+.display-inline-block{
+    display: inline-block;
+}

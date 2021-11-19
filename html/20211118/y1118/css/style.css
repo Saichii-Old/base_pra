@@ -1,0 +1,21 @@
+table, td , th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td,th{
+    padding: 10px 20px;
+}
+
+.price {
+    text-align: right;
+}
+
+.price::before{
+    content: "$ ";
+}
+
+.price::after{
+    content: " NTD";
+    margin-right: 20px;
+}

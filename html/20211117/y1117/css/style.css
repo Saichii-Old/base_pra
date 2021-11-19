@@ -1,0 +1,60 @@
+.form-box{
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    overflow: hidden;
+    padding: 15px;
+}
+
+.form-header{
+    border-radius: 10px;
+    background-color: lightblue;
+    color:white;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+}
+
+.form-header-title{
+    font-size: 24px;
+    margin:0;
+}
+
+.form-body{
+    padding: 20px 20px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: darkslateblue;
+    background-color: whitesmoke;
+    border: 1px solid darkgray;
+    border-radius: 10px;    
+    margin-top: 10px;
+}
+
+.submit-btn{
+    background-color: lightskyblue;
+    border: 1px solid darkslateblue;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.emailInput{
+    width: 100%;
+}
+
+.selectInput{
+    width: 50%;
+    color:red;
+}

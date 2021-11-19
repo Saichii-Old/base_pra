@@ -14,7 +14,12 @@
     <?php include "./include/footer.php"; ?>
 
     <div class="content">
-login
+        <form action="./api/check_login.php" method="post"></form>
+
+        
+
+        
     </div>
+
 </body>
 </html>

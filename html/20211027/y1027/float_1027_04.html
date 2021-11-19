@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 3px solid red;
+            padding: 20px;
+        }
+        .img1 {
+            float:right;
+        }
+        .img2{
+            float:right;
+        }
+        .clear-fix::after{
+            content: "";
+            clear:both;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- clear
+        left 消除左邊的float
+        right 消除右邊的float
+        both 消除左右兩邊的float
+        none: 預設值，不消除任何一邊的float
+        inherit:繼承float ie 不支援
+     -->
+    <h2>no clear fix</h2>
+    <p>no clear fix img</p>
+    <div>
+        <img src="https://fakeimg.pl/350x200/aaaaaa/eeeeee" class="img1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga magni ad rerum, blanditiis facilis quae
+        quasi quibusdam officia rem?
+    </div>
+
+    <h2 style="clear:both">clear fix</h2>
+    <p>clear fix img</p>
+    <div class="clear-fix">
+        <img src="https://fakeimg.pl/350x200/aaaaaa/eeeeee" class="img2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga magni ad rerum, blanditiis facilis quae
+        quasi quibusdam officia rem?
+    </div>
+
+
+</body>
+
+</html>
