@@ -1,4 +1,5 @@
 <?php
+
 //找出單筆資料
 echo "<pre>";
 print_r(find('members',2));
@@ -11,8 +12,5 @@ function find($table, $id){
     $rows=$pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
     return $rows;
 }
-
-
-
 
 ?>
