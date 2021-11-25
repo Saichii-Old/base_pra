@@ -39,7 +39,7 @@ for ($day = 1; $day <= $day_count; $day++, $week_day++) {
 
     // 若為當日 增加效果 若否則不變
     if ($today == $date) { 
-        $week = $week . '<td  style="background-color:ghostwhite;">';
+        $week = $week . '<td  style="background-color:red;">';
     } else {
         $week = $week . '<td>';
     }

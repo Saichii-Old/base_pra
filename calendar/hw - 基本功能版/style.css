@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: 'Montserrat', sans-serif;
+    margin: 60px auto;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+
+table {
+    width:500px;
+    margin:auto;
+    padding:20px;
+    border:1px solid black;
+}
+
+td {
+    padding:5px;
+    text-align: center;
+    border:1px solid black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+ 
+    /* text-align: center; */ 
+}
+
+.date {
+    text-align: center;
+    margin: 10px;
+}
