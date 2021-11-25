@@ -1,20 +1,34 @@
 <?php
 include "./common.php";
-    $errArr = [
-        "id 3 del",
-        "id 5 del",
-        "id 7 del",
-        "id 7 del",
-        "id 7 del",
-    ];
+    // $errArr = [
+    //     "id 3 del",
+    //     "id 5 del",
+    //     "id 7 del",
+    //     "id 7 del",
+    //     "id 7 del",
+    // ];
 
-    $color = [
-        "primary",
-        "secondary",
-        "success",
-        "danger",
-        "warning",
-    ];
+    // $color = [
+    //     "primary",
+    //     "secondary",
+    //     "success",
+    //     "danger",
+    //     "warning",
+    // ];
+
+
+    
+// $errArr = [
+//     ['id' => 't1' , 'message' => 'del id t1' , 'type' => 'danger'],
+//     ['id' => 't2' , 'message' => 'del id t2' , 'type' => 'secondary'],
+//     ['id' => 't3' , 'message' => 'del id t3' , 'type' => 'warning'],
+// ];
+
+$errArr = [
+    ['t1' ,'del id t1' ,'danger'],
+    ['t2' ,'del id t2' ,'secondary'],
+    ['t3' ,'del id t3' ,'warning'],
+];
 
     dd($errArr);
 ?>
@@ -39,11 +53,11 @@ include "./common.php";
 ?>
 <?php foreach ($errArr as $key => $value) :?>
 
-    <div class="alert alert-<?=$color[$key];?>" role="alert">
+    <div class="alert alert-<?=$value[2];?>" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        <h3><?=$value;?></h3>
+        <h3><?=$value[1];?></h3>
     </div>
 
     <?php endforeach; ?>
