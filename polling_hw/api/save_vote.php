@@ -11,6 +11,6 @@ update('options', ['count' => $opt['count']], ['id' => $opt_id]);
 
 // header("location:../index.php?do=vote_result"); //看投票結果
 
-to("../index.php?do=vote_result");
+to("../index.php?do=vote_result&id={$opt['topic_id']}");
 
 ?>
