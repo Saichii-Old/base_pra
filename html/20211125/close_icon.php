@@ -30,7 +30,7 @@ $errArr = [
     ['t3' ,'del id t3' ,'warning'],
 ];
 
-    dd($errArr);
+    dd($errArr[0][1]);
 ?>
 
 <!DOCTYPE html>
@@ -52,15 +52,21 @@ $errArr = [
 // print_r ($errArr);
 ?>
 <?php foreach ($errArr as $key => $value) :?>
-
-    <div class="alert alert-<?=$value[2];?>" role="alert">
+    <div class="alert alert-<?=$value[2];?> text-primary" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         <h3><?=$value[1];?></h3>
     </div>
+<?php endforeach; ?>
 
-    <?php endforeach; ?>
+
+
+
+
+
+
+
 
 <hr>
     <div class="alert alert-primary" role="alert">
