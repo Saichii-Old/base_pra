@@ -119,6 +119,10 @@ function del($table, $id)
     return $pdo->exec($sql);
 }
 
+function to ($url){
+    header("location:".$url);
+}
+
 
 function dd($array)
 {

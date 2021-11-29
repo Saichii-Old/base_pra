@@ -9,4 +9,8 @@ $opt['count'] = $opt['count'] + 1;
 
 update('options', ['count' => $opt['count']], ['id' => $opt_id]);
 
-header("location:../index.php?do=vote_result"); //看投票結果
+// header("location:../index.php?do=vote_result"); //看投票結果
+
+to("../index.php?do=vote_result");
+
+?>
