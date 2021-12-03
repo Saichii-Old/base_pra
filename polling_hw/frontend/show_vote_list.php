@@ -1,4 +1,3 @@
-<h1>列出所有的問題</h1>
 <?php
 $subjects=all('topics');
 echo "<ol class='list-group'>";
