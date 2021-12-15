@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1 class="text-center">Table / Modal</h1>
+
+
+
+    <div class="container mt-3">
+        <!-- Trigger the modal with a button -->
+        <div class="clearfix">
+            <button type="button" class="btn btn-success btn-lg float-right" id="myBtn">Add</button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Modal body..
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- table edit btn -->
+        <!-- 方法一 php foreach 跑不同id modal -->
+    
+        <!-- 方法二 開啟空 modal 再透過ajax要資料該筆id資料 後續可以修改 -->
+
+    <!-- table edit btn end -->
+
+    <!-- table -->
+    <div class="container">
+        <table class="table table-hover m-5">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Edit / Del</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>amy</td>
+                    <td>
+                        <button type="button" class="btn btn-warning btn-sm">Edit</button>
+                        <button type="button" class="btn btn-danger btn-sm">Del</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>bob</td>
+                    <td>
+                        <button type="button" class="btn btn-warning btn-sm">Edit</button>
+                        <button type="button" class="btn btn-danger btn-sm">Del</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Cat</td>
+                    <td>
+                        <button type="button" class="btn btn-warning btn-sm">Edit</button>
+                        <button type="button" class="btn btn-danger btn-sm">Del</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- table end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <!-- 上面要有js include  -->
+    <script>
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                $("#myModal").modal();
+            });
+        });
+    </script>
+    <!-- 上面要有js include end -->
+</body>
+
+</html>
